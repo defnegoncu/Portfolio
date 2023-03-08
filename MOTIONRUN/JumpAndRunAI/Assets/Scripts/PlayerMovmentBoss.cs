@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerMovmentBoss : MonoBehaviour
 {
     Rigidbody rb;
+    public PlayerMovement pm;
     // Start is called before the first frame update
     void Start()
     {
          rb = GetComponent<Rigidbody>();
-        
+        pm= FindObjectOfType(typeof(PlayerMovement)) as PlayerMovement;
     }
 
     // Update is called once per frame
@@ -23,5 +24,9 @@ public class PlayerMovmentBoss : MonoBehaviour
             transform.Translate(-3 * Time.deltaTime, 0, 0);
         if (Input.GetKey(KeyCode.S))
             transform.Translate(3 * Time.deltaTime, 0, 0);
+        if(Input.GetKey(KeyCode.Space))
+        {
+            pm.Jump6Dof();
+        }
     }
 }
