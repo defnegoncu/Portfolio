@@ -4,7 +4,7 @@ MOTIONRUN is a university group project designed to run with the ART DTrack syst
 		providing the Sound effects and their integration,
 		implementing all the Collusion and Trigger effects in the game,
 		including the Highscore System.
-	I also helped in implementation of player input and in various other coding areas.
+	I also helped in implementation of player input and in various other scripts.
 
 AI_CODE folder consists of some of the classes I wrote as a part of the AI for Games course. Sadly I do not own the rights to Vektoria game engine to share the executable file. 
 
